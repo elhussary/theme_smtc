@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="contact_page_view" model="ir.ui.view">
+        <field name="name">SMTC Contact Page</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_smtc.contact_page_view</field>
+        <field name="arch" type="xml">
+            <t t-name="theme_smtc.contact_page_view">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div class="oe_structure" id="top_builder" />
+
+                        <section class="py-5 border-bottom"
+                            style="background-color: #f8fafc; border-color: #f1f5f9 !important;">
+                            <div class="container py-4">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1 class="display-4 fw-bold text-dark mb-4">Contact
+                                            Engineering</h1>
+                                        <p class="lead" style="color: #475569;">
+                                            Connect with our technical support team for inquiries
+                                            regarding
+                                            production capacity, technical feasibility, or
+                                            logistics.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="oe_structure" id="middle_builder" />
+
+                        <section class="py-5">
+                            <div class="container py-5">
+                                <div class="row g-5">
+                                    <div class="col-lg-6">
+                                        <h2 class="h3 fw-bold text-dark mb-5">Global Headquarters</h2>
+                                        <div class="d-flex flex-column gap-4">
+                                            <div class="d-flex align-items-start">
+                                                <div class="me-4 mt-1">
+                                                    <i class="fa fa-map-marker fa-lg"
+                                                        style="color: #dc2626;"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="h6 fw-bold text-dark mb-1">Location</h4>
+                                                    <p class="mb-0 small text-muted">SMTC Industrial
+                                                        Complex, High-Tech Zone</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="me-4 mt-1">
+                                                    <i class="fa fa-envelope fa-lg"
+                                                        style="color: #dc2626;"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="h6 fw-bold text-dark mb-1">Email</h4>
+                                                    <p class="mb-0 small text-muted">Engineering:
+                                                        engineering@smtc-precision.com</p>
+                                                    <p class="mb-0 small text-muted">Sales:
+                                                        sales@smtc-precision.com</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex align-items-start">
+                                                <div class="me-4 mt-1">
+                                                    <i class="fa fa-clock-o fa-lg"
+                                                        style="color: #dc2626;"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="h6 fw-bold text-dark mb-1">Business
+                                                        Hours</h4>
+                                                    <p class="mb-0 small text-muted">Mon - Fri:
+                                                        08:00 - 18:00 (GMT+3)</p>
+                                                    <p class="mb-0 small text-muted">Manufacturing:
+                                                        24/7
+                                                        Operations</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="bg-white p-5 shadow-lg rounded-1 border"
+                                            style="border-color: #f1f5f9 !important;">
+                                            <h2 class="h3 fw-bold text-dark mb-4">General Inquiry</h2>
+                                            <form action="/website/form/" method="post"
+                                                enctype="multipart/form-data" class="s_website_form"
+                                                data-model_name="mail.mail">
+                                                <input type="hidden" name="csrf_token"
+                                                    t-att-value="request.csrf_token()" />
+                                                <div class="mb-3">
+                                                    <label
+                                                        class="form-label small fw-bold text-muted text-uppercase">
+                                                        Name</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 px-3 py-2"
+                                                        name="name" required="required" />
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label
+                                                        class="form-label small fw-bold text-muted text-uppercase">
+                                                        Email</label>
+                                                    <input type="email"
+                                                        class="form-control rounded-0 px-3 py-2"
+                                                        name="email" required="required" />
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label
+                                                        class="form-label small fw-bold text-muted text-uppercase">
+                                                        Subject</label>
+                                                    <input type="text"
+                                                        class="form-control rounded-0 px-3 py-2"
+                                                        name="subject" required="required" />
+                                                </div>
+
+                                                <div class="mb-3">
+                                                    <label
+                                                        class="form-label small fw-bold text-muted text-uppercase">
+                                                        Message</label>
+                                                    <textarea
+                                                        class="form-control rounded-0 px-3 py-2"
+                                                        name="message" rows="5" required="required"></textarea>
+                                                </div>
+
+                                                <div class="d-grid mt-4">
+                                                    <button type="submit"
+                                                        class="btn btn-dark rounded-0 py-3 fw-bold">Send
+                                                        Message</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="oe_structure" id="bottom_builder" />
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+
+    <record id="contact_page" model="website.page">
+        <field name="name">Contact Page</field>
+        <field name="url">/contact</field>
+        <field name="website_published">True</field>
+        <field name="view_id" ref="contact_page_view" />
+    </record>
+</odoo>

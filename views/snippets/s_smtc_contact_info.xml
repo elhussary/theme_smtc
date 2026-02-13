@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_smtc_contact_info" name="SMTC Contact Info">
+        <section class="s_smtc_contact_info py-5 bg-white" data-snippet="s_smtc_contact_info"
+            data-name="SMTC Contact Info">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <h2 class="h2 fw-bold text-dark mb-5">Global Headquarters</h2>
+
+                        <div class="d-flex mb-4">
+                            <div class="text-danger me-4">
+                                <i class="fa fa-map-marker-alt fa-lg" />
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-dark mb-2">Location</h5>
+                                <p class="text-muted mb-1">SMTC Industrial Complex, High-Tech
+                                    Manufacturing Zone</p>
+                                <p class="text-muted mb-0">Regional Gateway City, Global Hub</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-4">
+                            <div class="text-danger me-4">
+                                <i class="fa fa-envelope fa-lg" />
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-dark mb-2">Email</h5>
+                                <p class="text-muted mb-1">Engineering:
+                                    engineering@smtc-precision.com</p>
+                                <p class="text-muted mb-0">Sales: info@smtc-precision.com</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="text-danger me-4">
+                                <i class="fa fa-clock fa-lg" />
+                            </div>
+                            <div>
+                                <h5 class="fw-bold text-dark mb-2">Business Hours</h5>
+                                <p class="text-muted mb-1">Mon - Fri: 08:00 - 18:00 (GMT+3)</p>
+                                <p class="text-muted mb-0">Manufacturing: 24/7 Operations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="bg-white p-5 border shadow-lg">
+                            <h3 class="h3 fw-bold text-dark mb-4">General Inquiry</h3>
+                            <p class="text-muted mb-4">Use the contact form on our contact page or
+                                email us directly.</p>
+                            <a href="/contactus" class="btn btn-dark btn-lg w-100 py-3 fw-bold">Go
+                                to Contact Form</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

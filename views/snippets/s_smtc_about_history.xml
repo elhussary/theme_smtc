@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_smtc_about_history" name="SMTC About History">
+        <section class="s_smtc_about_history py-5 bg-light" data-snippet="s_smtc_about_history"
+            data-name="SMTC About History">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6">
+                        <h6 class="text-danger fw-bold text-uppercase mb-3"
+                            style="letter-spacing: 0.15em;">Our History</h6>
+                        <h2 class="display-5 fw-bold text-dark mb-4">25 Years of Precision
+                            Manufacturing</h2>
+                        <p class="text-muted fs-5 lh-lg mb-4">
+                            Swiss Master Technology Center (SMTC) was founded on the principles of
+                            Swiss engineering excellence.
+                            Our journey began with a single vision: to provide industries worldwide
+                            with the highest level of machining accuracy and reliability.
+                        </p>
+                        <p class="text-muted fs-5 lh-lg">
+                            Today, we operate a world-class facility equipped with the latest CNC
+                            technologies,
+                            serving long-term partners in Europe, the GCC, and beyond.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="text-center p-4 bg-white border shadow-sm">
+                                    <div class="h1 fw-bold text-danger mb-2">25+</div>
+                                    <div class="text-uppercase text-muted fw-bold small">Years Exp</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center p-4 bg-white border shadow-sm">
+                                    <div class="h1 fw-bold text-danger mb-2">10M+</div>
+                                    <div class="text-uppercase text-muted fw-bold small">Parts/Year</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center p-4 bg-white border shadow-sm">
+                                    <div class="h1 fw-bold text-danger mb-2">50+</div>
+                                    <div class="text-uppercase text-muted fw-bold small">CNC Units</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="text-center p-4 bg-white border shadow-sm">
+                                    <div class="h1 fw-bold text-danger mb-2">0.005mm</div>
+                                    <div class="text-uppercase text-muted fw-bold small">Precision</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

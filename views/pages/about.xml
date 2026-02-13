@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- About Page View -->
+    <record id="about_page_view" model="ir.ui.view">
+        <field name="name">SMTC About Page</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_smtc.about_page_view</field>
+        <field name="arch" type="xml">
+            <t t-name="theme_smtc.about_page_view">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div class="oe_structure" id="oe_structure_smtc_about_1" />
+                        <t t-call="theme_smtc.s_smtc_about_history" />
+                        <div class="oe_structure" id="oe_structure_smtc_about_2" />
+                        <t t-call="theme_smtc.s_smtc_mission_vision" />
+                        <div class="oe_structure" id="oe_structure_smtc_about_3" />
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+
+    <!-- About Page -->
+    <record id="about_page" model="website.page">
+        <field name="name">About Us</field>
+        <field name="url">/about</field>
+        <field name="is_published">True</field>
+        <field name="view_id" ref="about_page_view" />
+    </record>
+</odoo>

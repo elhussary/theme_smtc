@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_smtc_cta" name="SMTC Call to Action">
+        <section class="s_smtc_cta py-5 position-relative overflow-hidden" data-snippet="s_smtc_cta"
+            data-name="SMTC Call to Action" style="background-color: #dc2626;">
+            <div class="position-absolute top-0 end-0 h-100"
+                style="width: 33%; background-color: rgba(185,28,28,0.3); transform: skewX(-12deg) translateX(50%);" />
+            <div class="container py-5 position-relative" style="z-index: 10;">
+                <div class="row align-items-center">
+                    <div class="col-lg-7 text-center text-lg-start mb-4 mb-lg-0">
+                        <h2 class="display-5 fw-bold text-white mb-4">Ready to Scale Your
+                            Production?</h2>
+                        <p class="text-white fs-5" style="opacity: 0.9;">
+                            Connect with our engineering team today for a technical feasibility
+                            review and competitive quotation.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 text-center text-lg-end">
+                        <a href="/contactus"
+                            class="btn btn-light btn-lg px-5 py-4 fw-bold text-danger shadow-lg">
+                            Get a Quotation Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Industries Page View -->
+    <record id="industries_page_view" model="ir.ui.view">
+        <field name="name">SMTC Industries Page</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_smtc.industries_page_view</field>
+        <field name="arch" type="xml">
+            <t t-name="theme_smtc.industries_page_view">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div class="oe_structure" id="oe_structure_smtc_industries_1" />
+
+                        <section class="py-5 bg-light border-bottom s_title">
+                            <div class="container py-4">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <h1 class="display-4 fw-bold text-dark mb-4">Industries We
+                                            Serve</h1>
+                                        <p class="lead text-muted">
+                                            Precision components tailored for specific technical
+                                            requirements across global engineering sectors.
+                                            We focus on high-volume production with extreme
+                                            repeatability.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="oe_structure" id="oe_structure_smtc_industries_2" />
+
+                        <!-- Industry Cards -->
+                        <section class="py-5">
+                            <div class="container py-5">
+                                <!-- Oil & Gas -->
+                                <div class="row align-items-center mb-5 pb-5 border-bottom">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&amp;w=800"
+                                            class="w-100 shadow-lg"
+                                            style="aspect-ratio: 16/9; object-fit: cover;"
+                                            alt="Oil &amp; Gas" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2
+                                            class="h2 fw-bold text-dark mb-4 d-flex align-items-center">
+                                            <span class="bg-danger me-3"
+                                                style="width: 48px; height: 2px;" /> Oil &amp; Gas </h2>
+                                        <p class="text-muted fs-5 mb-4">
+                                            Critical components for high-pressure and harsh
+                                            environments. We specialize in components
+                                            that require tight tolerances and complex geometries.
+                                        </p>
+                                        <div class="row g-3">
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Downhole tools</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Valve components</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Sensors</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>High-nickel alloys</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Automotive -->
+                                <div
+                                    class="row align-items-center mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&amp;w=800"
+                                            class="w-100 shadow-lg"
+                                            style="aspect-ratio: 16/9; object-fit: cover;"
+                                            alt="Automotive" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2
+                                            class="h2 fw-bold text-dark mb-4 d-flex align-items-center">
+                                            <span class="bg-danger me-3"
+                                                style="width: 48px; height: 2px;" /> Automotive </h2>
+                                        <p class="text-muted fs-5 mb-4">
+                                            Precision fuel injection and electronic systems parts
+                                            for the automotive industry.
+                                        </p>
+                                        <div class="row g-3">
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Fuel injectors</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Transmission pins</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Turbocharger parts</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Brake system parts</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Medical Devices -->
+                                <div class="row align-items-center mb-5 pb-5 border-bottom">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800"
+                                            class="w-100 shadow-lg"
+                                            style="aspect-ratio: 16/9; object-fit: cover;"
+                                            alt="Medical Devices" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2
+                                            class="h2 fw-bold text-dark mb-4 d-flex align-items-center">
+                                            <span class="bg-danger me-3"
+                                                style="width: 48px; height: 2px;" /> Medical Devices </h2>
+                                        <p class="text-muted fs-5 mb-4">
+                                            Surgical instruments and implantable high-precision
+                                            parts.
+                                        </p>
+                                        <div class="row g-3">
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Surgical tools</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Ventilator valves</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Medical connectors</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Titanium components</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Dental -->
+                                <div
+                                    class="row align-items-center mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1593060550524-cc0973db5902?q=80&amp;w=800"
+                                            class="w-100 shadow-lg"
+                                            style="aspect-ratio: 16/9; object-fit: cover;"
+                                            alt="Dental" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2
+                                            class="h2 fw-bold text-dark mb-4 d-flex align-items-center">
+                                            <span class="bg-danger me-3"
+                                                style="width: 48px; height: 2px;" /> Dental
+                                            Components </h2>
+                                        <p class="text-muted fs-5 mb-4">
+                                            Micro-scale components for dental restoration and
+                                            implants.
+                                        </p>
+                                        <div class="row g-3">
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Implant screws</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Abutments</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Prosthetic parts</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Micro-threading</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Aerospace -->
+                                <div class="row align-items-center mb-5 pb-5 border-bottom">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1517976487492-5750f3195933?q=80&amp;w=800"
+                                            class="w-100 shadow-lg"
+                                            style="aspect-ratio: 16/9; object-fit: cover;"
+                                            alt="Aerospace" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2
+                                            class="h2 fw-bold text-dark mb-4 d-flex align-items-center">
+                                            <span class="bg-danger me-3"
+                                                style="width: 48px; height: 2px;" /> Aerospace </h2>
+                                        <p class="text-muted fs-5 mb-4">
+                                            Lightweight, high-strength components for aviation
+                                            systems.
+                                        </p>
+                                        <div class="row g-3">
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Actuator parts</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Fasteners</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Hydraulic connectors</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Avionics housing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Micro Mechanical -->
+                                <div
+                                    class="row align-items-center mb-5 pb-5 border-bottom flex-lg-row-reverse">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&amp;w=800"
+                                            class="w-100 shadow-lg"
+                                            style="aspect-ratio: 16/9; object-fit: cover;"
+                                            alt="Micro Mechanical" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2
+                                            class="h2 fw-bold text-dark mb-4 d-flex align-items-center">
+                                            <span class="bg-danger me-3"
+                                                style="width: 48px; height: 2px;" /> Micro
+                                            Mechanical Parts </h2>
+                                        <p class="text-muted fs-5 mb-4">
+                                            Sub-millimeter components with extreme dimensional
+                                            accuracy.
+                                        </p>
+                                        <div class="row g-3">
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Watch components</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Miniature gears</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Precision pivots</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Optical parts</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Electronics -->
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <img
+                                            src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&amp;w=800"
+                                            class="w-100 shadow-lg"
+                                            style="aspect-ratio: 16/9; object-fit: cover;"
+                                            alt="Electronics" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <h2
+                                            class="h2 fw-bold text-dark mb-4 d-flex align-items-center">
+                                            <span class="bg-danger me-3"
+                                                style="width: 48px; height: 2px;" /> Electronics
+                                            &amp; Precision </h2>
+                                        <p class="text-muted fs-5 mb-4">
+                                            High-conductivity and specialized connectors for
+                                            high-tech devices.
+                                        </p>
+                                        <div class="row g-3">
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Fiber optic connectors</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>RF shielding</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Heat sinks</span>
+                                            </div>
+                                            <div class="col-6 d-flex align-items-center">
+                                                <i class="fa fa-check-circle text-danger me-2" />
+                                                <span>Complex housing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="oe_structure" id="oe_structure_smtc_industries_3" />
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+
+    <!-- Industries Page -->
+    <record id="industries_page" model="website.page">
+        <field name="name">Industries</field>
+        <field name="url">/industries</field>
+        <field name="is_published">True</field>
+        <field name="view_id" ref="industries_page_view" />
+    </record>
+</odoo>

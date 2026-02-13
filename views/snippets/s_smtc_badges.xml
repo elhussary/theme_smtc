@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_smtc_badges" name="SMTC Trust Badges">
+        <section class="s_smtc_badges py-5 bg-light border-bottom" data-snippet="s_smtc_badges"
+            data-name="SMTC Trust Badges">
+            <div class="container">
+                <div class="row justify-content-center align-items-center text-center">
+                    <div class="col-6 col-md-3 p-4">
+                        <span class="fw-bold text-uppercase text-muted"
+                            style="letter-spacing: 0.15em; font-size: 0.9rem;">ISO 9001:2015</span>
+                    </div>
+                    <div class="col-6 col-md-3 p-4">
+                        <span class="fw-bold text-uppercase text-muted"
+                            style="letter-spacing: 0.15em; font-size: 0.9rem;">CERTIFIED QUALITY</span>
+                    </div>
+                    <div class="col-6 col-md-3 p-4">
+                        <span class="fw-bold text-uppercase text-muted"
+                            style="letter-spacing: 0.15em; font-size: 0.9rem;">25+ YEARS EXP</span>
+                    </div>
+                    <div class="col-6 col-md-3 p-4">
+                        <span class="fw-bold text-uppercase text-muted"
+                            style="letter-spacing: 0.15em; font-size: 0.9rem;">GLOBAL EXPORT</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

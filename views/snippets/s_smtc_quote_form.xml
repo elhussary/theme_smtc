@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_smtc_quote_form" name="SMTC Quote Form">
+        <section class="s_website_form py-5" data-vcss="001" data-snippet="s_website_form">
+            <div class="container">
+                <div class="row g-0 shadow-lg">
+
+                    <div class="col-lg-4 p-5 text-white" style="background-color: var(--o-color-2);">
+                        <h2 class="h3 fw-bold mb-4 text-white">Request a Quotation</h2>
+                        <p class="mb-5" style="color: rgba(255,255,255,0.7);">
+                            Our engineering team provides comprehensive feedback on your designs.
+                            Please provide as much technical detail as possible.
+                        </p>
+
+                        <div class="d-flex flex-column gap-4">
+                            <div class="d-flex align-items-start">
+                                <div
+                                    class="rounded-1 d-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                                    style="width: 32px; height: 32px; background-color: var(--o-color-1); font-weight: bold;">
+                                    1</div>
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1">Drawing Upload</h4>
+                                    <p class="small mb-0" style="color: rgba(255,255,255,0.6);">Supported:
+                                        PDF, STEP, DXF</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <div
+                                    class="rounded-1 d-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                                    style="width: 32px; height: 32px; background-color: var(--o-color-1); font-weight: bold;">
+                                    2</div>
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1">Technical Review</h4>
+                                    <p class="small mb-0" style="color: rgba(255,255,255,0.6);">Feasibility
+                                        &amp; Tolerance Check</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <div
+                                    class="rounded-1 d-flex align-items-center justify-content-center flex-shrink-0 me-3"
+                                    style="width: 32px; height: 32px; background-color: var(--o-color-1); font-weight: bold;">
+                                    3</div>
+                                <div>
+                                    <h4 class="h6 fw-bold mb-1">Confidentiality</h4>
+                                    <p class="small mb-0" style="color: rgba(255,255,255,0.6);">All
+                                        data protected by strict NDAs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 p-5 bg-white">
+                        <div id="smtc_quote_form_container" class="s_website_form"
+                            data-model_name="crm.lead" data-success-mode="redirect"
+                            data-success-page="/contactus-thank-you">
+                            <form action="/website/form/" method="post"
+                                enctype="multipart/form-data"
+                                class="container-fluid hide-submit-actions s_website_form_no_recaptcha">
+                                <input type="hidden" name="csrf_token"
+                                    t-att-value="request.csrf_token()" />
+
+                                <div class="row g-4 s_nb_column_fixed">
+
+                                    <div class="col-md-6 s_website_form_field s_website_form_custom"
+                                        data-type="char" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label
+                                                class="col-form-label col-12 small fw-bold text-muted text-uppercase"
+                                                for="contact_name">
+                                                Full Name
+                                            </label>
+                                            <div class="col-12">
+                                                <input type="text"
+                                                    class="form-control s_website_form_input border-0 border-bottom rounded-0 px-0"
+                                                    name="contact_name" required="required"
+                                                    id="contact_name" style="border-color: #e2e8f0;" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="col-md-6 s_website_form_field s_website_form_model_required"
+                                        data-type="email" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label
+                                                class="col-form-label col-12 small fw-bold text-muted text-uppercase"
+                                                for="email_from">
+                                                Company Email
+                                            </label>
+                                            <div class="col-12">
+                                                <input type="email"
+                                                    class="form-control s_website_form_input border-0 border-bottom rounded-0 px-0"
+                                                    name="email_from" required="required"
+                                                    id="email_from" style="border-color: #e2e8f0;" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 s_website_form_field s_website_form_custom"
+                                        data-type="char" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label
+                                                class="col-form-label col-12 small fw-bold text-muted text-uppercase"
+                                                for="partner_name">
+                                                Company Name
+                                            </label>
+                                            <div class="col-12">
+                                                <input type="text"
+                                                    class="form-control s_website_form_input border-0 border-bottom rounded-0 px-0"
+                                                    name="partner_name" required="required"
+                                                    id="partner_name" style="border-color: #e2e8f0;" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 s_website_form_field s_website_form_custom"
+                                        data-type="char" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label
+                                                class="col-form-label col-12 small fw-bold text-muted text-uppercase"
+                                                for="industry_id">
+                                                Target Industry
+                                            </label>
+                                            <div class="col-12">
+                                                <select
+                                                    class="form-select s_website_form_input border-0 border-bottom rounded-0 px-0 bg-transparent"
+                                                    name="industry_id"
+                                                    style="border-color: #e2e8f0;">
+                                                    <option value="Medical Devices">Medical Devices</option>
+                                                    <option value="Aerospace">Aerospace</option>
+                                                    <option value="Automotive">Automotive</option>
+                                                    <option value="Electronics">Electronics</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 s_website_form_field s_website_form_custom"
+                                        data-type="char" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label
+                                                class="col-form-label col-12 small fw-bold text-muted text-uppercase"
+                                                for="material_desc">
+                                                Material
+                                            </label>
+                                            <div class="col-12">
+                                                <input type="text"
+                                                    class="form-control s_website_form_input border-0 border-bottom rounded-0 px-0"
+                                                    name="description"
+                                                    placeholder="e.g. Titanium Gr5"
+                                                    id="material_desc"
+                                                    style="border-color: #e2e8f0;" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 s_website_form_field s_website_form_custom"
+                                        data-type="char" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label
+                                                class="col-form-label col-12 small fw-bold text-muted text-uppercase"
+                                                for="tolerance_desc">
+                                                Tolerance
+                                            </label>
+                                            <div class="col-12">
+                                                <input type="text"
+                                                    class="form-control s_website_form_input border-0 border-bottom rounded-0 px-0"
+                                                    name="description" placeholder="e.g. ±0.005mm"
+                                                    id="tolerance_desc"
+                                                    style="border-color: #e2e8f0;" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="col-12 mt-4 s_website_form_field s_website_form_custom"
+                                        data-type="binary" data-name="Field">
+                                        <div class="row s_col_no_resize s_col_no_bgcolor">
+                                            <label
+                                                class="col-form-label col-12 small fw-bold text-muted text-uppercase">
+                                                Upload Drawings
+                                            </label>
+                                            <div class="col-12">
+                                                <div
+                                                    class="p-4 border-2 border-dashed rounded text-center"
+                                                    style="border-color: #e2e8f0;">
+                                                    <i
+                                                        class="fa fa-cloud-upload fa-2x mb-2 text-muted"></i>
+                                                    <input type="file" name="attachment"
+                                                        class="form-control s_website_form_input"
+                                                        multiple="true" />
+                                                    <div class="small text-muted mt-2">PDF, STEP,
+                                                        DXF up to 50MB</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 mt-4 s_website_form_submit text-end"
+                                        data-name="Submit Button">
+                                        <div class="s_website_form_no_submit_label" />
+                                        <button type="submit"
+                                            class="btn btn-primary s_website_form_send w-100 py-3 fw-bold text-white rounded-1 shadow-sm"
+                                            style="background-color: var(--o-color-1); border-color: var(--o-color-1);">
+                                            Submit Request for Quotation
+                                        </button>
+                                        <span id="s_website_form_result"></span>
+                                    </div>
+
+                                    <div class="col-12 text-center">
+                                        <p class="small text-muted mb-0" style="font-size: 0.75rem;">
+                                            By submitting, you agree to our confidentiality
+                                            statement.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

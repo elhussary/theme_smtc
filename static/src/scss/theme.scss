@@ -1,0 +1,63 @@
+body.o_connected_user #wrapwrap {
+  padding-top: 0;
+}
+
+#wrapwrap {
+  padding-top: 60px;
+}
+
+// NAVBAR ACTIVE LINK
+.smtc-header {
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--o-color-1, #dc2626) !important;
+  }
+}
+
+// HIGHLIGHT CARDS
+.s_smtc_highlight_card {
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--o-color-1, #dc2626) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+
+  &:hover .s_smtc_highlight_icon {
+    background-color: var(--o-color-1, #dc2626) !important;
+
+    i {
+      color: white !important;
+    }
+  }
+}
+
+// INDUSTRY CARDS
+.s_smtc_industry_card {
+  img {
+    transition: transform 0.5s ease;
+  }
+
+  &:hover img {
+    transform: scale(1.1);
+  }
+}
+
+// CUSTOM FOOTER
+.s_smtc_footer {
+  a {
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: var(--o-color-1, #dc2626) !important;
+    }
+  }
+}
+
+// RESPONSIVE
+@media (max-width: 767.98px) {
+  .s_smtc_hero h1 {
+    font-size: 2.5rem;
+  }
+}

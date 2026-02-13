@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_smtc_quality" name="SMTC Quality Assurance">
+        <section class="s_smtc_quality py-5 bg-light" data-snippet="s_smtc_quality"
+            data-name="SMTC Quality Assurance">
+            <div class="container py-4">
+                <div class="row align-items-center g-5 p-5 bg-white border">
+                    <div class="col-md-4 text-center">
+                        <div class="display-3 fw-bold text-danger mb-2">100%</div>
+                        <div class="text-uppercase text-muted fw-bold small"
+                            style="letter-spacing: 0.15em;">Inspection Rate</div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="h2 fw-bold text-dark mb-4">Quality Assurance &amp; Metrology</h3>
+                        <p class="text-muted lh-lg mb-0">
+                            Precision is nothing without verification. Our metrology lab is equipped
+                            with high-resolution vision systems,
+                            laser measurement, and tactile CMMs. Every batch undergoes rigorous
+                            statistical process control (SPC)
+                            to guarantee absolute consistency across millions of units.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

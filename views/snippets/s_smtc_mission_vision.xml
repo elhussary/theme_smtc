@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_smtc_mission_vision" name="SMTC Mission Vision">
+        <section class="s_smtc_mission_vision py-5 bg-white" data-snippet="s_smtc_mission_vision"
+            data-name="SMTC Mission Vision">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <h3 class="fw-bold text-dark mb-4">Our Mission</h3>
+                        <p class="text-muted lh-lg">
+                            Supporting our partners in achieving the highest reliable quality
+                            through precision manufacturing.
+                            We don't just supply parts; we provide manufacturing solutions that
+                            empower innovation across engineering industries.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="fw-bold text-dark mb-4">Our Vision</h3>
+                        <p class="text-muted lh-lg">
+                            To be the most trusted global Swiss-type CNC manufacturing partner,
+                            recognized for our
+                            engineering-driven approach and commitment to continuous improvement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

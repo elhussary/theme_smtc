@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Primary Variables -->
+        <record id="theme_smtc_primary_variables" model="ir.asset">
+            <field name="name">SMTC Primary Variables</field>
+            <field name="bundle">web._assets_primary_variables</field>
+            <field name="path">theme_smtc/static/src/scss/primary_variables.scss</field>
+        </record>
+
+        <!-- Theme Main SCSS -->
+        <record id="theme_smtc_theme_scss" model="ir.asset">
+            <field name="name">SMTC Theme SCSS</field>
+            <field name="bundle">web.assets_frontend</field>
+            <field name="path">theme_smtc/static/src/scss/theme.scss</field>
+        </record>
+
+    </data>
+</odoo>

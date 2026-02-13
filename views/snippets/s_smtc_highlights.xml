@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_smtc_highlights" name="SMTC Key Highlights">
+        <section class="s_smtc_highlights py-5 bg-white" data-snippet="s_smtc_highlights"
+            data-name="SMTC Key Highlights">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <h6 class="text-danger fw-bold text-uppercase mb-3"
+                        style="letter-spacing: 0.15em;">Core Expertise</h6>
+                    <h2 class="display-5 fw-bold text-dark">Engineered for Excellence</h2>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="s_smtc_highlight_card h-100 p-5 border bg-white">
+                            <div
+                                class="s_smtc_highlight_icon mb-4 d-flex align-items-center justify-content-center rounded"
+                                style="width: 48px; height: 48px; background-color: #fef2f2;">
+                                <i class="fa fa-bolt text-danger fa-lg" />
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3">Swiss-Type CNC Machining</h4>
+                            <p class="text-muted mb-0">
+                                State-of-the-art sliding headstock machines for parts up to 32mm
+                                diameter with extreme precision.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="s_smtc_highlight_card h-100 p-5 border bg-white">
+                            <div
+                                class="s_smtc_highlight_icon mb-4 d-flex align-items-center justify-content-center rounded"
+                                style="width: 48px; height: 48px; background-color: #fef2f2;">
+                                <i class="fa fa-industry text-danger fa-lg" />
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3">High-Volume Production</h4>
+                            <p class="text-muted mb-0">
+                                Reliable 24/7 manufacturing cycles capable of delivering millions of
+                                parts annually with zero compromise on quality.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="s_smtc_highlight_card h-100 p-5 border bg-white">
+                            <div
+                                class="s_smtc_highlight_icon mb-4 d-flex align-items-center justify-content-center rounded"
+                                style="width: 48px; height: 48px; background-color: #fef2f2;">
+                                <i class="fa fa-check-circle text-danger fa-lg" />
+                            </div>
+                            <h4 class="fw-bold text-dark mb-3">Advanced Metrology</h4>
+                            <p class="text-muted mb-0">
+                                Coordinate measuring machines (CMM) and optical inspection systems
+                                ensuring micron-level compliance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

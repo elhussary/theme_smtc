@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="s_smtc_capabilities" name="SMTC Capabilities">
+        <section class="s_smtc_capabilities py-5 bg-white" data-snippet="s_smtc_capabilities"
+            data-name="SMTC Capabilities">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <div class="mb-5">
+                            <h3 class="h2 fw-bold text-dark mb-4">Swiss-Type CNC Turning</h3>
+                            <p class="text-muted lh-lg">
+                                Our core strength lies in sliding headstock technology. This allows
+                                us to machine long, slender parts
+                                without vibration, maintaining micron-level precision that
+                                fixed-headstock machines cannot achieve.
+                            </p>
+                            <ul class="list-unstyled mt-4">
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="bg-danger rounded-circle me-3"
+                                        style="width: 6px; height: 6px;" />
+                                    <span class="text-dark fw-medium">Diameter Range: 0.5mm to 32mm</span>
+                                </li>
+                                <li class="d-flex align-items-center mb-2">
+                                    <span class="bg-danger rounded-circle me-3"
+                                        style="width: 6px; height: 6px;" />
+                                    <span class="text-dark fw-medium">Tolerances down to ±0.005mm</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span class="bg-danger rounded-circle me-3"
+                                        style="width: 6px; height: 6px;" />
+                                    <span class="text-dark fw-medium">Simultaneous back-working for
+                                        finished parts</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="h2 fw-bold text-dark mb-4">Materials Expertise</h3>
+                            <p class="text-muted lh-lg">
+                                We work with a wide variety of industrial materials, optimizing
+                                machining parameters
+                                for each to ensure surface finish and structural integrity.
+                            </p>
+                            <div class="d-flex flex-wrap gap-2 mt-4">
+                                <span class="badge bg-light text-dark border px-3 py-2">Titanium</span>
+                                <span class="badge bg-light text-dark border px-3 py-2">Stainless
+                                    Steel 316/304</span>
+                                <span class="badge bg-light text-dark border px-3 py-2">Inconel</span>
+                                <span class="badge bg-light text-dark border px-3 py-2">Brass</span>
+                                <span class="badge bg-light text-dark border px-3 py-2">PEEK</span>
+                                <span class="badge bg-light text-dark border px-3 py-2">Advanced
+                                    Ceramics</span>
+                                <span class="badge bg-light text-dark border px-3 py-2">Aluminum
+                                    Alloys</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img
+                            src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&amp;w=800&amp;auto=format&amp;fit=crop"
+                            class="w-100 h-100 shadow-lg"
+                            style="object-fit: cover; min-height: 500px;" alt="Factory Floor" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+
+</odoo>

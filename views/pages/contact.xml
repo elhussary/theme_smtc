@@ -86,16 +86,18 @@
                                             <h2 class="h3 fw-bold text-dark mb-4">General Inquiry</h2>
                                             <form action="/website/form/" method="post"
                                                 enctype="multipart/form-data" class="s_website_form"
-                                                data-model_name="mail.mail">
+                                                data-model_name="crm.lead"
+                                                data-success_page="/contactus-thank-you">
                                                 <input type="hidden" name="csrf_token"
                                                     t-att-value="request.csrf_token()" />
+
                                                 <div class="mb-3">
                                                     <label
                                                         class="form-label small fw-bold text-muted text-uppercase">
                                                         Name</label>
                                                     <input type="text"
                                                         class="form-control rounded-0 px-3 py-2"
-                                                        name="name" required="required" />
+                                                        name="contact_name" required="required" />
                                                 </div>
 
                                                 <div class="mb-3">
@@ -104,7 +106,7 @@
                                                         Email</label>
                                                     <input type="email"
                                                         class="form-control rounded-0 px-3 py-2"
-                                                        name="email" required="required" />
+                                                        name="email_from" required="required" />
                                                 </div>
 
                                                 <div class="mb-3">
@@ -113,7 +115,7 @@
                                                         Subject</label>
                                                     <input type="text"
                                                         class="form-control rounded-0 px-3 py-2"
-                                                        name="subject" required="required" />
+                                                        name="name" required="required" />
                                                 </div>
 
                                                 <div class="mb-3">
@@ -122,7 +124,8 @@
                                                         Message</label>
                                                     <textarea
                                                         class="form-control rounded-0 px-3 py-2"
-                                                        name="message" rows="5" required="required"></textarea>
+                                                        name="description" rows="5"
+                                                        required="required"></textarea>
                                                 </div>
 
                                                 <div class="d-grid mt-4">

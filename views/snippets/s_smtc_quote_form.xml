@@ -51,6 +51,7 @@
                         </div>
                     </div>
 
+                    <!-- Quote Form -->
                     <div class="col-lg-8 p-5 bg-white">
                         <div id="smtc_quote_form_container" class="s_website_form">
                             <form action="/website/form/"
@@ -104,8 +105,8 @@
                                             class="form-select s_website_form_input border-0 border-bottom rounded-0 px-0 bg-transparent"
                                             name="industry_id">
                                             <option value="">Select Industry...</option>
-                                            <option value="1">Medical Devices</option>
-                                            <option value="2">Aerospace</option>
+                                            <option value="medical">Medical Devices</option>
+                                            <option value="aerospace">Aerospace</option>
                                         </select>
                                     </div>
 

@@ -7,7 +7,7 @@
     "sequence": 100,
     "author": "Soft Mission",
     "license": "LGPL-3",
-    "depends": ["website","theme_common"],
+    "depends": ["website","theme_common", "crm"],
     "data": [
         "data/generate_primary_template.xml",
         "data/ir_asset.xml",

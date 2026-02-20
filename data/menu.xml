@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Industries -->
+    <record id="menu_industries" model="theme.website.menu">
+        <field name="name">Industries</field>
+        <field name="url">/industries</field>
+        <field name="sequence" type="int">20</field>
+    </record>
+
+    <!-- Capabilities -->
+    <record id="menu_capabilities" model="theme.website.menu">
+        <field name="name">Capabilities</field>
+        <field name="url">/capabilities</field>
+        <field name="sequence" type="int">30</field>
+    </record>
+
+    <!-- About Us -->
+    <record id="menu_about" model="theme.website.menu">
+        <field name="name">About Us</field>
+        <field name="url">/about</field>
+        <field name="sequence" type="int">40</field>
+    </record>
+
+    <!-- Contact -->
+    <record id="menu_contact" model="theme.website.menu">
+        <field name="name">Contact</field>
+        <field name="url">/contact</field>
+        <field name="sequence" type="int">50</field>
+    </record>
+</odoo>

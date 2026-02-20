@@ -3,7 +3,6 @@
     <template id="smtc_snippets_registry" inherit_id="website.snippets">
         <xpath expr="//snippets[@id='snippet_structure']" position="inside">
             <!-- Homepage Snippets -->
-            <t t-snippet="theme_smtc.s_smtc_hero" string="SMTC Hero" />
             <t t-snippet="theme_smtc.s_smtc_badges" string="SMTC Trust Badges" />
             <t t-snippet="theme_smtc.s_smtc_highlights" string="SMTC Key Highlights" />
             <t t-snippet="theme_smtc.s_smtc_industries" string="SMTC Industries Preview" />

@@ -103,10 +103,17 @@
                                             Industry</label>
                                         <select
                                             class="form-select s_website_form_input border-0 border-bottom rounded-0 px-0 bg-transparent"
-                                            name="industry_id">
+                                            name="industry">
                                             <option value="">Select Industry...</option>
                                             <option value="medical">Medical Devices</option>
                                             <option value="aerospace">Aerospace</option>
+                                            <option value="precision_electronics">Precision
+                                                Electronics</option>
+                                            <option value="oil_and_gas">Oil &amp; Gas</option>
+                                            <option value="automotive">Automotive</option>
+                                            <option value="micro_mechanical_parts">Micro Mechanical
+                                                Parts</option>
+                                            <option value="dental_components">Dental Components</option>
                                         </select>
                                     </div>
 
@@ -116,7 +123,7 @@
                                             Material</label>
                                         <input type="text"
                                             class="form-control s_website_form_input border-0 border-bottom rounded-0 px-0"
-                                            name="material_custom" placeholder="e.g. Titanium Gr5" />
+                                            name="material" placeholder="e.g. Titanium Gr5" />
                                     </div>
 
                                     <div class="col-md-6 s_website_form_field">
@@ -125,7 +132,7 @@
                                             Tolerance</label>
                                         <input type="text"
                                             class="form-control s_website_form_input border-0 border-bottom rounded-0 px-0"
-                                            name="tolerance_custom" placeholder="e.g. ±0.005mm" />
+                                            name="tolerance" placeholder="e.g. ±0.005mm" />
                                     </div>
 
                                     <div class="col-12 mt-4 s_website_form_field">

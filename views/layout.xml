@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- HEADER: Add "Get a Quote" button -->
-    <template id="smtc_header_cta" inherit_id="website.template_header_default"
-        name="SMTC Get a Quote Button">
-        <xpath expr="//div[@id='o_main_nav']" position="inside">
-            <a href="/quote" class="btn px-4 py-2 fw-semibold text-white ms-2 flex-shrink-0"
-                style="background-color: var(--o-color-1, #dc2626); border-color: var(--o-color-1, #dc2626);">
-                Get a Quote
-            </a>
-        </xpath>
-    </template>
-
     <!-- FOOTER -->
     <template id="smtc_footer" inherit_id="website.layout" name="SMTC Footer">
         <xpath expr="//footer" position="replace">
@@ -74,7 +63,7 @@
                                         style="color: rgba(255,255,255,0.5);">Capabilities</a>
                                 </li>
                                 <li class="mb-2">
-                                    <a href="/contactus" class="text-decoration-none small"
+                                    <a href="/contact" class="text-decoration-none small"
                                         style="color: rgba(255,255,255,0.5);">Contact Us</a>
                                 </li>
                                 <li class="mb-2">

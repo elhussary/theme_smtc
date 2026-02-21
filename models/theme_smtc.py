@@ -5,7 +5,7 @@ class ThemeUtils(models.AbstractModel):
 
     def _theme_theme_smtc_post_copy(self, mod):
         
-        self.enable_view('theme_smtc.smtc_header')
+        # self.enable_view('theme_smtc.smtc_header')
         self.enable_view('theme_smtc.smtc_footer')
         
         # # ضبط الألوان أوتوماتيك لليوزر
